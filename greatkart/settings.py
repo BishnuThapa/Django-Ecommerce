@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts'
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -71,6 +72,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'greatkart.wsgi.application'
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database

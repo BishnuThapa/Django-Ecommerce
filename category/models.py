@@ -6,7 +6,7 @@ from django.db import models
 class Category(models.Model):
     category_name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField()
-    desctiption = models.TextField(max_length=255)
+    desctiption = models.TextField(max_length=255, blank=True)
     cat_image = models.ImageField(upload_to='photos/categories', blank=True)
 
     def __str__(self):
